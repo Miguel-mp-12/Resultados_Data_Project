@@ -11,9 +11,15 @@ Este proyecto demuestra un flujo completo de análisis de datos mediante un pipe
     E --> F[PDF Report Generation]
 
 ## Estructura del repositorio
-    📁 outputs/reports/         → 📄 Reporte final PDF
+    📁 outputs
+            /reports/           → 📄 Reporte final PDF
+            /data_catalog/      → 📄 Data Catalog xlsx
+            /rejects/           → 📄 Sales records rejected due to wrong Date
+                                → 📄 visits records rejected due to wrong Date
+            /review_sales/      → 📄 Bronze sales in xlsx
+                                → 📄 Gold sales in xlsx
     📁 data_examples/           → 📄 Datos de muestra para ilustración (sin datos reales)
-    📄 README.md                → Este archivo
+    📄 README.md                → 📄 Readme
 
 ## 📈 Informe generado
 El informe PDF incluye:
