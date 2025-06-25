@@ -1,0 +1,21 @@
+rep_id,name,email,hire_date,region_id,status,birthdate,phone
+REP001,Yolanda Mendoza,sue78@yahoo.com,2025-02-13,REG04,Inactive,1988-08-01,+1-497-334-8434x43757
+REP002,Timothy Pope,david86@yahoo.com,2023-05-30,REG04,Active,1974-06-11,041-574-7338x4842
+REP003,Patrick Allen,danawilliams@rivera-kennedy.com,2020-07-08,REG03,Active,1975-03-23,(773)454-0193x80262
+REP004,Amanda Huff,sharonhayden@yahoo.com,2020-10-16,REG02,Inactive,1965-02-08,991-547-8872x8743
+REP005,Erin Simon,alexisrogers@yahoo.com,2025-04-21,REG05,Inactive,1977-08-15,(966)851-6122
+REP006,Timothy Smith,seanadams@yahoo.com,,REG05,Inactive,1985-01-08,001-904-530-1742
+REP007,Jonathan Jacobson,fowlershelia@yahoo.com,2022-05-09,REG03,Active,1979-05-22,(727)956-8783
+REP008,Melanie Larson,xrice@stark.com,2025-02-17,REG02,Inactive,1998-11-15,982.258.7139
+REP009,Steven Griffin Jr.,dbryant@ford.biz,2022-08-21,REG01,Active,1964-09-05,001-391-065-1801x7046
+REP010,Chad May,victoria67@yahoo.com,2023-09-02,REG01,Active,1969-12-08,+1-825-128-6823x00478
+REP011,James Hall,eric31@gmail.com,2024-01-15,REG02,Inactive,1965-07-16,311.907.9030
+REP012,David Robinson,williamroberts@johnston.com,,REG05,Active,1980-08-06,283-644-0892x6870
+REP013,Teresa Powers,trussell@yahoo.com,2022-01-14,REG04,Inactive,1996-09-12,342.708.6688
+REP014,David Harris,fboone@hardy.org,2020-10-22,REG05,Inactive,1969-06-06,983.735.4033
+REP015,Autumn Key,heatherpadilla@yahoo.com,2022-07-05,REG05,Inactive,1986-05-12,001-467-854-4587x71753
+REP016,Jason Hart,allentran@riley.com,2022-06-06,REG05,Active,1990-04-28,001-378-547-7725
+REP017,Nathan Freeman,combscharles@williams.com,2021-01-19,REG01,Inactive,1974-10-02,3875099770
+REP018,Juan Smith,andre62@gmail.com,,REG03,Active,1971-01-11,233.984.5461x56793
+REP019,Courtney Sutton DVM,sullivannicholas@brown-smith.com,2021-03-05,REG03,Inactive,1998-06-29,(591)803-3974x01489
+REP020,Cassie Jefferson,brendagoodwin@nicholson.org,2022-07-09,REG02,Inactive,1990-12-16,+1-856-218-5016x31599

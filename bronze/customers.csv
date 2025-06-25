@@ -1,0 +1,51 @@
+customer_id,name,contact_name,email,phone,address,region_id,customer_type,created_at
+CUST0001,"Rodriguez, Figueroa and Sanchez",Brian Yang,fjohnson@hall.com,+1-386-379-4026,"51161 Abbott Rapids, Lindsaymouth, DE 50116",REG01,Hospital,2022-10-23
+CUST0002,"Carter, Fuller and Mcclure",Corey Jones,tracie31@ramirez-reid.com,(553)419-2832,"835 Jeremy Bypass Suite 641, New Nancy, IL 86410",REG03,Hospital,2024-08-06
+CUST0003,Wilkerson-Day,Charles Mcgee,zhurst@yahoo.com,287.101.2269,"784 Erin Crescent Suite 514, Mooretown, VA 35023",REG02,Hospital,2024-08-08
+CUST0004,Romero Inc,Elizabeth Fowler,nathanielmartin@sellers.com,(430)391-1718x227,"USNS Baker, FPO AP 55962",REG01,Clinic,2023-05-18
+CUST0005,"Campos, Vaughn and Marquez",Michael Brooks,,713.315.0983x93010,"1834 Lewis Curve, Sanchezfort, MT 25458",REG05,Hospital,2022-11-16
+CUST0006,Hopkins LLC,John Daniel,powellmatthew@wright.net,262.473.1781x080,"Unit 3267 Box 7360, DPO AE 50173",REG05,Pharmacy,2022-06-26
+CUST0007,Baker-Bowers,Jay Bernard,jamesrobinson@gmail.com,001-805-009-7882,"19136 Shelly Port, New Brooke, CO 55449",REG01,Hospital,N/A
+CUST0008,"Silva, Mills and Donovan",Mike Allen,emilyevans@yahoo.com,001-107-991-1838x42513,"8498 Elizabeth Plaza, Sarahville, DC 35165",REG01,Hospital,2022-12-19
+CUST0009,Newton and Sons,Larry Robbins,william40@walters.com,5242786801,"059 Russell Canyon, Michaelton, MI 28036",REG02,Clinic,2025-05-17
+CUST0010,Estrada LLC,Stacey Russell,,+1-232-260-2563x421,"3375 Hoover Well, East Andrew, MO 43526",REG05,Hospital,2023-08-29
+CUST0011,Rasmussen LLC,Jordan Frazier,wilsontara@gmail.com,001-401-965-5698,"0608 Michael Cliff, Cindyville, ME 66970",REG05,Hospital,2023-10-16
+CUST0012,"Ortiz, Powell and Phillips",Jason Bentley,richard04@clark-floyd.org,+1-577-738-7214x8951,"433 Andrew Gardens, Carrland, MT 83045",REG05,Pharmacy,2024-12-03
+CUST0013,Higgins Group,David Douglas Jr.,zrobinson@holmes.com,278.895.7986x872,"4348 Sims Harbor Suite 143, Matthewside, DC 20270",REG02,Pharmacy,2023-06-17
+CUST0014,Benson-Mccarthy,Jason Daniels,clarkrobert@hotmail.com,001-096-705-4668x893,"7065 Ramsey Ville Suite 298, South Brittanytown, SD 56680",REG05,Pharmacy,N/A
+CUST0015,Camacho and Sons,James Lewis,,564-641-7080x53100,"USNS Combs, FPO AP 20474",REG01,Hospital,2023-06-28
+CUST0016,Wells Inc,Claudia Lyons,catherinestuart@hotmail.com,241-904-9663,"49190 Patel Shore, Caseymouth, MT 64752",REG04,Pharmacy,2022-12-03
+CUST0017,Yu-Reid,Michelle Graham,umarshall@hotmail.com,531-473-7996x507,"3545 Beard Squares, Angelahaven, CO 32136",REG03,Hospital,2024-03-15
+CUST0018,Peters-Allen,Michael West,phillipsrichard@torres.com,885.685.5744x4313,"37498 Hooper Village, West Jeremy, ME 02355",REG02,Pharmacy,2024-09-29
+CUST0019,Hill Inc,Melissa Martinez,salasaudrey@yahoo.com,752.047.1167x1902,"31869 Kimberly Light Suite 749, Torreston, WA 13507",REG01,Hospital,2023-05-11
+CUST0020,"Clark, Guerrero and Moore",Benjamin Smith,,974.034.4713x493,"242 Brian Turnpike, Brookeshire, LA 58061",REG04,Hospital,2023-01-02
+CUST0021,Barker-Lyons,Kathryn Snyder,prestonjessica@wright.org,001-049-027-8742,"Unit 6717 Box 5655, DPO AP 14211",REG03,Pharmacy,N/A
+CUST0022,Rivera Ltd,Matthew Morales DDS,qmiller@wilson-barton.net,8760385977,"8247 Martinez Roads, Lake Eric, AL 72885",REG05,Pharmacy,2024-03-17
+CUST0023,Walker Inc,Bruce Collier,william46@yahoo.com,378.263.9821x4658,"4997 Sean Orchard, Martinside, NH 42677",REG01,Clinic,2023-04-12
+CUST0024,"Allen, Reyes and Chase",Evan Kennedy,ymcneil@hotmail.com,(702)895-1718,"PSC 0262, Box 1745, APO AP 91295",REG04,Clinic,2024-03-01
+CUST0025,"Miller, Murphy and Craig",Tiffany Sims,,001-780-913-4316x11724,"PSC 0504, Box 5562, APO AE 70122",REG01,Pharmacy,2024-03-24
+CUST0026,"Maldonado, White and Thompson",Janet Vega,jesselittle@yahoo.com,074-821-7594x647,"7136 Andrews Squares, Andrewfurt, AL 74678",REG01,Clinic,2025-05-23
+CUST0027,"Beltran, Lozano and Mcgee",Stephanie Parsons,jeffery39@byrd-le.com,+1-104-709-5214x5623,"842 Sloan Orchard Suite 517, East Karenbury, TX 95425",REG03,Clinic,2025-05-05
+CUST0028,Coffey-Ballard,Richard Smith,vrichardson@baker.com,370-985-9317,"PSC 4612, Box 0047, APO AE 13240",REG05,Pharmacy,N/A
+CUST0029,Clay and Sons,Jacob Avery,nicolepena@yahoo.com,+1-640-537-7351x585,"17139 Brent Isle Apt. 293, Port Kathyborough, IL 31040",REG05,Hospital,2023-11-15
+CUST0030,Kramer PLC,Scott Thomas,,(842)102-0539,"0268 Julie Mountains, Stricklandhaven, CT 59746",REG01,Hospital,2024-08-13
+CUST0031,Dougherty Inc,Susan Hopkins,bschneider@gmail.com,661.771.1592x1249,"9847 Garcia Squares Apt. 836, Beasleychester, NH 52763",REG02,Pharmacy,2024-03-30
+CUST0032,"Davis, Simmons and Ortega",Christian Leblanc,deckerchristopher@garner.com,+1-098-851-6560,"Unit 9451 Box 9832, DPO AP 63702",REG01,Hospital,2023-06-06
+CUST0033,Bell PLC,Phillip Andrews,lynchdiane@hotmail.com,024-455-0229x612,"83667 Moore Inlet, Kimberlyshire, CO 07396",REG01,Pharmacy,2023-02-19
+CUST0034,Webster Inc,Denise Stanley,nperry@hotmail.com,561-497-8403,"34324 Murphy Avenue, Burgessburgh, MS 70307",REG03,Pharmacy,2025-06-20
+CUST0035,Mason Ltd,Andrea Hensley,,6071596966,"52975 Samuel Coves Apt. 696, South Monicamouth, MA 22538",REG03,Hospital,N/A
+CUST0036,Dixon Inc,Cheyenne Parsons,joelthomas@gmail.com,(921)277-9979,"527 Taylor Roads Suite 490, Williamport, NV 05430",REG03,Pharmacy,2022-09-19
+CUST0037,Decker-Jones,Savannah Gilbert,ycarpenter@hotmail.com,7935978207,"182 John Mill Suite 889, West Nathan, MS 54079",REG02,Clinic,2023-11-30
+CUST0038,"Harper, Mccormick and Holland",Brandon Gregory,jennifer92@yahoo.com,925-462-9148,"81685 Michael Falls Apt. 573, East Eric, WY 13757",REG03,Clinic,2024-08-19
+CUST0039,"Conley, Stephenson and Johnson",Ralph Anderson,francisguerra@hotmail.com,(706)537-9473,"3597 Hammond Tunnel Suite 886, Port James, DC 33269",REG01,Clinic,2022-09-12
+CUST0040,"Castillo, Watson and Villa",Kelli Martinez,,247-826-1375,"USCGC Brown, FPO AP 49516",REG02,Clinic,2023-06-24
+CUST0041,Vang-Brooks,Timothy Combs,devinmitchell@yahoo.com,001-277-901-0432x898,"41036 Brown Villages Suite 980, Lake Douglas, AL 81085",REG02,Hospital,2023-12-23
+CUST0042,Duncan and Sons,Angela Villegas,myerstheodore@hughes.com,531-952-0585,"772 Bryan Trail, Johnsonborough, WY 26645",REG04,Pharmacy,N/A
+CUST0043,Stewart LLC,Virginia Daniels,mullinsjames@yahoo.com,001-054-156-6765x27758,"616 Amy Islands, North Markport, NV 79487",REG03,Clinic,2024-04-14
+CUST0044,Norris LLC,Nicholas Buck,danielle01@hotmail.com,+1-658-202-9702x1355,"275 Wallace Club, New Michael, SD 37029",REG05,Hospital,2023-07-15
+CUST0045,Johnson and Sons,Mr. Justin Green III,,394.731.2172x715,"844 Jennifer Squares, Port Michael, DE 26843",REG03,Hospital,2023-01-24
+CUST0046,Tyler Inc,Kenneth Mcdonald,jonesraymond@higgins.org,251-778-5289,"8018 Kevin Estates, Sarahbury, NC 37731",REG02,Hospital,2022-10-23
+CUST0047,Gonzalez-Huber,Mario Mendez,brittanycarpenter@hopkins.org,900-109-4396x90784,"3647 Haley Estate Suite 677, West Catherine, VT 42354",REG03,Pharmacy,2023-12-11
+CUST0048,Anderson-Wood,Emma Owens,gwright@gmail.com,696-325-9532x7877,"16873 Brandy Causeway Apt. 479, Mitchelltown, CT 56983",REG03,Hospital,2023-01-17
+CUST0049,Luna-Gallagher,James Hudson,angela16@cole.org,+1-912-165-5852x39868,"57872 Mark Ridge, Franciscoport, MA 66995",REG02,Clinic,N/A
+CUST0050,"Patel, Erickson and Evans",Isabella Nunez,,(940)974-9930x97289,"30913 Scott Manor Apt. 636, Salaston, DC 68485",REG03,Hospital,2023-05-11
