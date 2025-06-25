@@ -1,0 +1,662 @@
+
+🔎 Explorando contenido en carpeta bronze/
+📁 Carpeta: /Users/maik/Projects/customer_insights_project/data/bronze
+--------------------------------------------------
+📄 Archivo: customers.csv
+🔢 Registros: 50
+📊 Columnas: ['customer_id', 'name', 'contact_name', 'email', 'phone', 'address', 'region_id', 'customer_type', 'created_at']
+🕒 Columna created_at: 2022-06-26 → 2025-06-20
+📊 Preview de customers.csv:
++---------------+---------------------------------+------------------+-----------------------------+--------------------+--------------------------------------------------+-------------+-----------------+---------------------+
+| customer_id   | name                            | contact_name     | email                       | phone              | address                                          | region_id   | customer_type   | created_at          |
++===============+=================================+==================+=============================+====================+==================================================+=============+=================+=====================+
+| CUST0001      | Rodriguez, Figueroa and Sanchez | Brian Yang       | fjohnson@hall.com           | +1-386-379-4026    | 51161 Abbott Rapids, Lindsaymouth, DE 50116      | REG01       | Hospital        | 2022-10-23 00:00:00 |
++---------------+---------------------------------+------------------+-----------------------------+--------------------+--------------------------------------------------+-------------+-----------------+---------------------+
+| CUST0002      | Carter, Fuller and Mcclure      | Corey Jones      | tracie31@ramirez-reid.com   | (553)419-2832      | 835 Jeremy Bypass Suite 641, New Nancy, IL 86410 | REG03       | Hospital        | 2024-08-06 00:00:00 |
++---------------+---------------------------------+------------------+-----------------------------+--------------------+--------------------------------------------------+-------------+-----------------+---------------------+
+| CUST0003      | Wilkerson-Day                   | Charles Mcgee    | zhurst@yahoo.com            | 287.101.2269       | 784 Erin Crescent Suite 514, Mooretown, VA 35023 | REG02       | Hospital        | 2024-08-08 00:00:00 |
++---------------+---------------------------------+------------------+-----------------------------+--------------------+--------------------------------------------------+-------------+-----------------+---------------------+
+| CUST0004      | Romero Inc                      | Elizabeth Fowler | nathanielmartin@sellers.com | (430)391-1718x227  | USNS Baker, FPO AP 55962                         | REG01       | Clinic          | 2023-05-18 00:00:00 |
++---------------+---------------------------------+------------------+-----------------------------+--------------------+--------------------------------------------------+-------------+-----------------+---------------------+
+| CUST0005      | Campos, Vaughn and Marquez      | Michael Brooks   | nan                         | 713.315.0983x93010 | 1834 Lewis Curve, Sanchezfort, MT 25458          | REG05       | Hospital        | 2022-11-16 00:00:00 |
++---------------+---------------------------------+------------------+-----------------------------+--------------------+--------------------------------------------------+-------------+-----------------+---------------------+
+... (mostrar solo primeros 5 registros)
+--------------------------------------------------
+
+--------------------------------------------------
+📄 Archivo: regions.csv
+🔢 Registros: 5
+📊 Columnas: ['region_id', 'region_name']
+📊 Preview de regions.csv:
++-------------+---------------+
+| region_id   | region_name   |
++=============+===============+
+| REG01       | North         |
++-------------+---------------+
+| REG02       | South         |
++-------------+---------------+
+| REG03       | East          |
++-------------+---------------+
+| REG04       | West          |
++-------------+---------------+
+| REG05       | Central       |
++-------------+---------------+
+--------------------------------------------------
+
+--------------------------------------------------
+📄 Archivo: products.csv
+🔢 Registros: 15
+📊 Columnas: ['product_id', 'name', 'category', 'launch_date', 'price_usd', 'is_active']
+🕒 Columna launch_date: 2015-07-25 → 2024-03-11
+📊 Preview de products.csv:
++--------------+---------------------------------+------------+---------------------+-------------+-------------+
+| product_id   | name                            | category   | launch_date         |   price_usd | is_active   |
++==============+=================================+============+=====================+=============+=============+
+| PROD001      | Expedite Impactful Vortals      | Antibiotic | 2015-12-24 00:00:00 |      191.23 | False       |
++--------------+---------------------------------+------------+---------------------+-------------+-------------+
+| PROD002      | Whiteboard Real-Time Systems    | Analgesic  | 2023-10-27 00:00:00 |      106.46 | True        |
++--------------+---------------------------------+------------+---------------------+-------------+-------------+
+| PROD003      | Enhance Synergistic Schemas     | Antiviral  | 2021-11-10 00:00:00 |      169.92 | True        |
++--------------+---------------------------------+------------+---------------------+-------------+-------------+
+| PROD004      | Brand Viral Methodologies       | Analgesic  | 2021-12-09 00:00:00 |       81.04 | True        |
++--------------+---------------------------------+------------+---------------------+-------------+-------------+
+| PROD005      | Evolve Distributed Action-Items | Antibiotic | 2016-09-21 00:00:00 |      123.8  | False       |
++--------------+---------------------------------+------------+---------------------+-------------+-------------+
+... (mostrar solo primeros 5 registros)
+--------------------------------------------------
+
+--------------------------------------------------
+📄 Archivo: reps.csv
+🔢 Registros: 20
+📊 Columnas: ['rep_id', 'name', 'email', 'hire_date', 'region_id', 'status', 'birthdate', 'phone']
+🕒 Columna hire_date: 2020-07-08 → 2025-04-21
+🕒 Columna birthdate: 1964-09-05 → 1998-11-15
+📊 Preview de reps.csv:
++----------+-----------------+---------------------------------+---------------------+-------------+----------+---------------------+-----------------------+
+| rep_id   | name            | email                           | hire_date           | region_id   | status   | birthdate           | phone                 |
++==========+=================+=================================+=====================+=============+==========+=====================+=======================+
+| REP001   | Yolanda Mendoza | sue78@yahoo.com                 | 2025-02-13 00:00:00 | REG04       | Inactive | 1988-08-01 00:00:00 | +1-497-334-8434x43757 |
++----------+-----------------+---------------------------------+---------------------+-------------+----------+---------------------+-----------------------+
+| REP002   | Timothy Pope    | david86@yahoo.com               | 2023-05-30 00:00:00 | REG04       | Active   | 1974-06-11 00:00:00 | 041-574-7338x4842     |
++----------+-----------------+---------------------------------+---------------------+-------------+----------+---------------------+-----------------------+
+| REP003   | Patrick Allen   | danawilliams@rivera-kennedy.com | 2020-07-08 00:00:00 | REG03       | Active   | 1975-03-23 00:00:00 | (773)454-0193x80262   |
++----------+-----------------+---------------------------------+---------------------+-------------+----------+---------------------+-----------------------+
+| REP004   | Amanda Huff     | sharonhayden@yahoo.com          | 2020-10-16 00:00:00 | REG02       | Inactive | 1965-02-08 00:00:00 | 991-547-8872x8743     |
++----------+-----------------+---------------------------------+---------------------+-------------+----------+---------------------+-----------------------+
+| REP005   | Erin Simon      | alexisrogers@yahoo.com          | 2025-04-21 00:00:00 | REG05       | Inactive | 1977-08-15 00:00:00 | (966)851-6122         |
++----------+-----------------+---------------------------------+---------------------+-------------+----------+---------------------+-----------------------+
+... (mostrar solo primeros 5 registros)
+--------------------------------------------------
+
+--------------------------------------------------
+📄 Archivo: visits.csv
+🔢 Registros: 149
+📊 Columnas: ['visit_id', 'rep_id', 'customer_id', 'visit_date', 'duration_minutes', 'purpose', 'notes']
+🕒 Columna visit_date: 2024-06-22 → 2025-06-22
+📊 Preview de visits.csv:
++------------+----------+---------------+---------------------+--------------------+--------------+-----------------------------------------------------------------------------------------------------+
+| visit_id   | rep_id   | customer_id   | visit_date          |   duration_minutes | purpose      | notes                                                                                               |
++============+==========+===============+=====================+====================+==============+=====================================================================================================+
+| VISIT00001 | REP009   | CUST0040      | 2025-01-02 00:00:00 |                 45 | Support      | Young lot far turn beat story. Give gas six miss.                                                   |
++------------+----------+---------------+---------------------+--------------------+--------------+-----------------------------------------------------------------------------------------------------+
+| VISIT00002 | REP020   | CUST0034      | 2025-02-21 00:00:00 |                 45 | Support      | Policy it ahead pass. Last involve above Democrat everything.                                       |
++------------+----------+---------------+---------------------+--------------------+--------------+-----------------------------------------------------------------------------------------------------+
+| VISIT00003 | REP017   | CUST0039      | 2024-08-28 00:00:00 |                 60 | Product Info | Cell fire late approach grow. Machine crime himself. Measure manager range indeed style major bar.  |
++------------+----------+---------------+---------------------+--------------------+--------------+-----------------------------------------------------------------------------------------------------+
+| VISIT00004 | REP004   | CUST0042      | 2025-04-06 00:00:00 |                 30 | Support      | Member of environmental myself yard my series. National wrong bill stop seem fear. Last give stage. |
++------------+----------+---------------+---------------------+--------------------+--------------+-----------------------------------------------------------------------------------------------------+
+| VISIT00005 | REP015   | CUST0015      | 2025-03-22 00:00:00 |                 60 | Contract     | Of weight method too spring. While size try yeah.                                                   |
++------------+----------+---------------+---------------------+--------------------+--------------+-----------------------------------------------------------------------------------------------------+
+... (mostrar solo primeros 5 registros)
+--------------------------------------------------
+
+--------------------------------------------------
+📄 Archivo: sales.csv
+🔢 Registros: 199
+📊 Columnas: ['sale_id', 'product_id', 'customer_id', 'rep_id', 'quantity', 'sale_date', 'discount_pct', 'total_value_usd']
+🕒 Columna sale_date: 2024-06-24 → 2025-06-18
+📊 Preview de sales.csv:
++-----------+--------------+---------------+----------+------------+---------------------+----------------+-------------------+
+| sale_id   | product_id   | customer_id   | rep_id   |   quantity | sale_date           |   discount_pct |   total_value_usd |
++===========+==============+===============+==========+============+=====================+================+===================+
+| SALE00001 | PROD006      | CUST0002      | REP019   |         71 | 2025-01-30 00:00:00 |           0.07 |           1179.07 |
++-----------+--------------+---------------+----------+------------+---------------------+----------------+-------------------+
+| SALE00002 | PROD002      | CUST0046      | REP002   |         30 | 2025-01-10 00:00:00 |           0.02 |            253.92 |
++-----------+--------------+---------------+----------+------------+---------------------+----------------+-------------------+
+| SALE00003 | PROD006      | CUST0005      | REP017   |         31 | 2024-08-26 00:00:00 |           0.08 |           2478.53 |
++-----------+--------------+---------------+----------+------------+---------------------+----------------+-------------------+
+| SALE00004 | PROD009      | CUST0009      | REP019   |         74 | 2025-03-15 00:00:00 |           0.14 |           3944.64 |
++-----------+--------------+---------------+----------+------------+---------------------+----------------+-------------------+
+| SALE00005 | PROD013      | CUST0027      | REP007   |         13 | 2024-11-16 00:00:00 |           0.03 |           2212.15 |
++-----------+--------------+---------------+----------+------------+---------------------+----------------+-------------------+
+... (mostrar solo primeros 5 registros)
+--------------------------------------------------
+
+✅ Fin del resumen inicial de archivos bronze 
+
+
+🚿 Iniciando limpieza de tabla: customers.csv
+📥 Archivo cargado: customers.csv
+🔢 Registros originales: 50
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: customers (raw)
+Total de filas: 50
+
+🔹 customer_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 contact_name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 email | tipo: object | nulos: 10 (20.0%) | vacíos: 0 (0.0%)
+🔹 phone | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 address | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 region_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 customer_type | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 created_at | tipo: object | nulos: 7 (14.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (raw):
++---------------+---------+---------+----------+-----------+------------+
+| column        | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++===============+=========+=========+==========+===========+============+
+| customer_id   | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| name          | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| contact_name  | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| email         | object  |      10 |        0 |        20 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| phone         | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| address       | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| region_id     | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| customer_type | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| created_at    | object  |       7 |        0 |        14 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+📆 Fechas inválidas eliminadas: 7
+💾 Versión actual sobrescrita en: customers_clean.csv
+🗂 Versión histórica guardada en: customers_clean_2025-06-24_2321.csv
+📄 Registro de control actualizado: ingestion_control.csv
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: customers_clean (silver)
+Total de filas: 45
+
+🔹 row_id | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 customer_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 contact_name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 email | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 phone | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 address | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 region_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 customer_type | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 created_at | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (cleaned)
+:
++---------------+---------+---------+----------+-----------+------------+
+| column        | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++===============+=========+=========+==========+===========+============+
+| row_id        | int64   |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| customer_id   | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| name          | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| contact_name  | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| email         | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| phone         | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| address       | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| region_id     | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| customer_type | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+| created_at    | object  |       0 |        0 |         0 |          0 |
++---------------+---------+---------+----------+-----------+------------+
+
+🚿 Iniciando limpieza de tabla: products.csv
+📥 Archivo cargado: products.csv
+🔢 Registros originales: 15
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: products (raw)
+Total de filas: 15
+
+🔹 product_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 category | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 launch_date | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 price_usd | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 is_active | tipo: bool | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (raw):
++-------------+---------+---------+----------+-----------+------------+
+| column      | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++=============+=========+=========+==========+===========+============+
+| product_id  | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| name        | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| category    | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| launch_date | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| price_usd   | float64 |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| is_active   | bool    |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+📆 Fechas inválidas eliminadas: 0
+💾 Versión actual sobrescrita en: products_clean.csv
+🗂 Versión histórica guardada en: products_clean_2025-06-24_2321.csv
+📄 Registro de control actualizado: ingestion_control.csv
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: products_clean (silver)
+Total de filas: 17
+
+🔹 row_id | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 product_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 category | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 launch_date | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 price_usd | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 is_active | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (cleaned)
+:
++-------------+---------+---------+----------+-----------+------------+
+| column      | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++=============+=========+=========+==========+===========+============+
+| row_id      | int64   |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| product_id  | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| name        | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| category    | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| launch_date | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| price_usd   | float64 |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| is_active   | int64   |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+
+🚿 Iniciando limpieza de tabla: regions.csv
+📥 Archivo cargado: regions.csv
+🔢 Registros originales: 5
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: regions (raw)
+Total de filas: 5
+
+🔹 region_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 region_name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (raw):
++-------------+---------+---------+----------+-----------+------------+
+| column      | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++=============+=========+=========+==========+===========+============+
+| region_id   | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| region_name | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+💾 Versión actual sobrescrita en: regions_clean.csv
+🗂 Versión histórica guardada en: regions_clean_2025-06-24_2321.csv
+📄 Registro de control actualizado: ingestion_control.csv
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: regions_clean (silver)
+Total de filas: 7
+
+🔹 row_id | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 region_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 region_name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (cleaned)
+:
++-------------+---------+---------+----------+-----------+------------+
+| column      | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++=============+=========+=========+==========+===========+============+
+| row_id      | int64   |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| region_id   | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+| region_name | object  |       0 |        0 |         0 |          0 |
++-------------+---------+---------+----------+-----------+------------+
+
+🚿 Iniciando limpieza de tabla: reps.csv
+📥 Archivo cargado: reps.csv
+🔢 Registros originales: 20
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: reps (raw)
+Total de filas: 20
+
+🔹 rep_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 email | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 hire_date | tipo: object | nulos: 3 (15.0%) | vacíos: 0 (0.0%)
+🔹 region_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 status | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 birthdate | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 phone | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (raw):
++-----------+---------+---------+----------+-----------+------------+
+| column    | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++===========+=========+=========+==========+===========+============+
+| rep_id    | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| name      | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| email     | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| hire_date | object  |       3 |        0 |        15 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| region_id | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| status    | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| birthdate | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| phone     | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+📆 Fechas inválidas eliminadas - hire_date: 3
+📆 Fechas inválidas NO eliminadas - birthdate: 0
+💾 Versión actual sobrescrita en: reps_clean.csv
+🗂 Versión histórica guardada en: reps_clean_2025-06-24_2321.csv
+📄 Registro de control actualizado: ingestion_control.csv
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: reps_clean (silver)
+Total de filas: 19
+
+🔹 row_id | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 rep_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 name | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 email | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 hire_date | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 region_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 status | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 birthdate | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 phone | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (cleaned)
+:
++-----------+---------+---------+----------+-----------+------------+
+| column    | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++===========+=========+=========+==========+===========+============+
+| row_id    | int64   |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| rep_id    | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| name      | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| email     | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| hire_date | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| region_id | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| status    | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| birthdate | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+| phone     | object  |       0 |        0 |         0 |          0 |
++-----------+---------+---------+----------+-----------+------------+
+
+🚿 Iniciando limpieza de tabla: visits.csv
+📥 Archivo cargado: visits.csv
+🔢 Registros originales: 149
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: visits (raw)
+Total de filas: 149
+
+🔹 visit_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 rep_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 customer_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 visit_date | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 duration_minutes | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 purpose | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 notes | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (raw):
++------------------+---------+---------+----------+-----------+------------+
+| column           | dtype   |   nulls |   blanks |   nulls_% |   blanks_% |
++==================+=========+=========+==========+===========+============+
+| visit_id         | object  |       0 |        0 |         0 |          0 |
++------------------+---------+---------+----------+-----------+------------+
+| rep_id           | object  |       0 |        0 |         0 |          0 |
++------------------+---------+---------+----------+-----------+------------+
+| customer_id      | object  |       0 |        0 |         0 |          0 |
++------------------+---------+---------+----------+-----------+------------+
+| visit_date       | object  |       0 |        0 |         0 |          0 |
++------------------+---------+---------+----------+-----------+------------+
+| duration_minutes | int64   |       0 |        0 |         0 |          0 |
++------------------+---------+---------+----------+-----------+------------+
+| purpose          | object  |       0 |        0 |         0 |          0 |
++------------------+---------+---------+----------+-----------+------------+
+| notes            | object  |       0 |        0 |         0 |          0 |
++------------------+---------+---------+----------+-----------+------------+
+🛑 14 filas con fecha inválida guardadas en: visits_rejected_fecha_2025-06-24_2321.csv
+🔗 Mapeo de dimensión 'customer':
+   ✔️ Mapeados correctamente: 113
+   ❓ Asignados -1 (UNKNOWN): 22
+   ⚠️ Asignados -2 (UNSPECIFIED): 0
+🔗 Mapeo de dimensión 'rep':
+   ✔️ Mapeados correctamente: 114
+   ❓ Asignados -1 (UNKNOWN): 21
+   ⚠️ Asignados -2 (UNSPECIFIED): 0
+💾 Versión actual sobrescrita en: visits_clean.csv
+🗂 Versión histórica guardada en: visits_clean_2025-06-24_2321.csv
+📄 Registro de control actualizado: ingestion_control.csv
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: visits_clean (silver)
+Total de filas: 135
+
+🔹 visit_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 visit_date | tipo: datetime64[ns] | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 duration_minutes | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 purpose | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 notes | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 customer_row_id | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 rep_row_id | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Informe de calidad (cleaned)
+:
++------------------+----------------+---------+----------+-----------+------------+
+| column           | dtype          |   nulls |   blanks |   nulls_% |   blanks_% |
++==================+================+=========+==========+===========+============+
+| visit_id         | object         |       0 |        0 |         0 |          0 |
++------------------+----------------+---------+----------+-----------+------------+
+| visit_date       | datetime64[ns] |       0 |        0 |         0 |          0 |
++------------------+----------------+---------+----------+-----------+------------+
+| duration_minutes | int64          |       0 |        0 |         0 |          0 |
++------------------+----------------+---------+----------+-----------+------------+
+| purpose          | object         |       0 |        0 |         0 |          0 |
++------------------+----------------+---------+----------+-----------+------------+
+| notes            | object         |       0 |        0 |         0 |          0 |
++------------------+----------------+---------+----------+-----------+------------+
+| customer_row_id  | float64        |       0 |        0 |         0 |          0 |
++------------------+----------------+---------+----------+-----------+------------+
+| rep_row_id       | float64        |       0 |        0 |         0 |          0 |
++------------------+----------------+---------+----------+-----------+------------+
+
+🚿 Iniciando limpieza incremental de tabla: sales.csv
+📥 Archivo cargado: sales.csv
+🔢 Registros brutos: 199
+📦 No hay registros existentes. Se procesarán todos los registros.
+🛑 18 filas con fecha inválida guardadas en: sales_rejected_fecha_2025-06-24_2321.csv
+🔗 Mapeo de dimensión 'product':
+   ✔️ Mapeados correctamente: 181
+   ❓ Asignados -1 (UNKNOWN): 0
+   ⚠️ Asignados -2 (UNSPECIFIED): 0
+🔗 Mapeo de dimensión 'customer':
+   ✔️ Mapeados correctamente: 153
+   ❓ Asignados -1 (UNKNOWN): 28
+   ⚠️ Asignados -2 (UNSPECIFIED): 0
+🔗 Mapeo de dimensión 'rep':
+   ✔️ Mapeados correctamente: 156
+   ❓ Asignados -1 (UNKNOWN): 25
+   ⚠️ Asignados -2 (UNSPECIFIED): 0
+💾 Tabla limpia sobrescrita en: sales_clean.csv
+🗂 Versión histórica guardada: sales_clean_2025-06-24_2321.csv
+📄 Registro de control actualizado: ingestion_control.csv
+🧼📊📋 Informe de calidad de datos:
+Tabla analizada: sales_clean (nuevos)
+Total de filas: 181
+
+🔹 sale_id | tipo: object | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 quantity | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 sale_date | tipo: datetime64[ns] | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 discount_pct | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 total_value_usd | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 product_row_id | tipo: int64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 customer_row_id | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+🔹 rep_row_id | tipo: float64 | nulos: 0 (0.0%) | vacíos: 0 (0.0%)
+📊 Fin del informe de calidad
+
+📊 Vista previa de nuevos registros limpios:
++-----------+------------+---------------------+----------------+-------------------+------------------+-------------------+--------------+
+| sale_id   |   quantity | sale_date           |   discount_pct |   total_value_usd |   product_row_id |   customer_row_id |   rep_row_id |
++===========+============+=====================+================+===================+==================+===================+==============+
+| SALE00001 |         71 | 2025-01-30 00:00:00 |           0.07 |           1179.07 |                6 |                 2 |           16 |
++-----------+------------+---------------------+----------------+-------------------+------------------+-------------------+--------------+
+| SALE00002 |         30 | 2025-01-10 00:00:00 |           0.02 |            253.92 |                2 |                40 |            2 |
++-----------+------------+---------------------+----------------+-------------------+------------------+-------------------+--------------+
+| SALE00003 |         31 | 2024-08-26 00:00:00 |           0.08 |           2478.53 |                6 |                 5 |           15 |
++-----------+------------+---------------------+----------------+-------------------+------------------+-------------------+--------------+
+| SALE00004 |         74 | 2025-03-15 00:00:00 |           0.14 |           3944.64 |                9 |                 8 |           16 |
++-----------+------------+---------------------+----------------+-------------------+------------------+-------------------+--------------+
+| SALE00005 |         13 | 2024-11-16 00:00:00 |           0.03 |           2212.15 |               13 |                24 |            6 |
++-----------+------------+---------------------+----------------+-------------------+------------------+-------------------+--------------+
+
+🌟 Iniciando generación de tabla gold: customers
+📥 Tabla cargada desde silver: customers_clean.csv
+🔢 Registros: 45
+📊 Vista previa de tabla gold: customers:
++----------+-----------------+---------------------------------+------------------+-----------------------------+-------------------------+--------------------------------------------------+------------------------+-----------------+--------------------------+
+|   row_id | Customer Code   | Customer Name                   | Contact Name     | Customer Email              | Customer Phone Number   | Customer Address                                 | Customer Region Code   | Customer Type   | Customer Creation Date   |
++==========+=================+=================================+==================+=============================+=========================+==================================================+========================+=================+==========================+
+|        1 | CUST0001        | Rodriguez, Figueroa and Sanchez | Brian Yang       | fjohnson@hall.com           | +1-386-379-4026         | 51161 Abbott Rapids, Lindsaymouth, DE 50116      | REG01                  | Hospital        | 2022-10-23               |
++----------+-----------------+---------------------------------+------------------+-----------------------------+-------------------------+--------------------------------------------------+------------------------+-----------------+--------------------------+
+|        2 | CUST0002        | Carter, Fuller and Mcclure      | Corey Jones      | tracie31@ramirez-reid.com   | (553)419-2832           | 835 Jeremy Bypass Suite 641, New Nancy, IL 86410 | REG03                  | Hospital        | 2024-08-06               |
++----------+-----------------+---------------------------------+------------------+-----------------------------+-------------------------+--------------------------------------------------+------------------------+-----------------+--------------------------+
+|        3 | CUST0003        | Wilkerson-Day                   | Charles Mcgee    | zhurst@yahoo.com            | 287.101.2269            | 784 Erin Crescent Suite 514, Mooretown, VA 35023 | REG02                  | Hospital        | 2024-08-08               |
++----------+-----------------+---------------------------------+------------------+-----------------------------+-------------------------+--------------------------------------------------+------------------------+-----------------+--------------------------+
+|        4 | CUST0004        | Romero Inc                      | Elizabeth Fowler | nathanielmartin@sellers.com | (430)391-1718x227       | USNS Baker, FPO AP 55962                         | REG01                  | Clinic          | 2023-05-18               |
++----------+-----------------+---------------------------------+------------------+-----------------------------+-------------------------+--------------------------------------------------+------------------------+-----------------+--------------------------+
+|        5 | CUST0005        | Campos, Vaughn and Marquez      | Michael Brooks   | UNSPECIFIED                 | 713.315.0983x93010      | 1834 Lewis Curve, Sanchezfort, MT 25458          | REG05                  | Hospital        | 2022-11-16               |
++----------+-----------------+---------------------------------+------------------+-----------------------------+-------------------------+--------------------------------------------------+------------------------+-----------------+--------------------------+
+💾 Versión actual sobrescrita en: gold_customers.csv
+🗂 Versión histórica guardada: gold_customers_2025-06-24_2321.csv
+
+🌟 Iniciando generación de tabla gold: products
+📥 Tabla cargada desde silver: products_clean.csv
+🔢 Registros: 17
+📊 Vista previa de tabla gold: products:
++----------+----------------+---------------------------------+--------------------+-----------------------+-----------------------+-----------------------+
+|   row_id | Product Code   | Product Name                    | Product Category   | Product Launch Date   |   Product Price (USD) |   Product Active Flag |
++==========+================+=================================+====================+=======================+=======================+=======================+
+|        1 | PROD001        | Expedite Impactful Vortals      | Antibiotic         | 2015-12-24            |                191.23 |                     0 |
++----------+----------------+---------------------------------+--------------------+-----------------------+-----------------------+-----------------------+
+|        2 | PROD002        | Whiteboard Real-Time Systems    | Analgesic          | 2023-10-27            |                106.46 |                     1 |
++----------+----------------+---------------------------------+--------------------+-----------------------+-----------------------+-----------------------+
+|        3 | PROD003        | Enhance Synergistic Schemas     | Antiviral          | 2021-11-10            |                169.92 |                     1 |
++----------+----------------+---------------------------------+--------------------+-----------------------+-----------------------+-----------------------+
+|        4 | PROD004        | Brand Viral Methodologies       | Analgesic          | 2021-12-09            |                 81.04 |                     1 |
++----------+----------------+---------------------------------+--------------------+-----------------------+-----------------------+-----------------------+
+|        5 | PROD005        | Evolve Distributed Action-Items | Antibiotic         | 2016-09-21            |                123.8  |                     0 |
++----------+----------------+---------------------------------+--------------------+-----------------------+-----------------------+-----------------------+
+💾 Versión actual sobrescrita en: gold_products.csv
+🗂 Versión histórica guardada: gold_products_2025-06-24_2321.csv
+
+🌟 Iniciando generación de tabla gold: regions
+📥 Tabla cargada desde silver: regions_clean.csv
+🔢 Registros: 7
+📊 Vista previa de tabla gold: regions:
++----------+---------------+---------------+
+|   row_id | Region Code   | Region Name   |
++==========+===============+===============+
+|        1 | REG01         | North         |
++----------+---------------+---------------+
+|        2 | REG02         | South         |
++----------+---------------+---------------+
+|        3 | REG03         | East          |
++----------+---------------+---------------+
+|        4 | REG04         | West          |
++----------+---------------+---------------+
+|        5 | REG05         | Central       |
++----------+---------------+---------------+
+💾 Versión actual sobrescrita en: gold_regions.csv
+🗂 Versión histórica guardada: gold_regions_2025-06-24_2321.csv
+
+🌟 Iniciando generación de tabla gold: reps
+📥 Tabla cargada desde silver: reps_clean.csv
+🔢 Registros: 19
+📊 Vista previa de tabla gold: reps:
++----------+------------+-----------------+---------------------------------+-----------------------+------------------+-----------------+--------------+-------------------+
+|   row_id | Rep Code   | Rep Name        | Rep Email                       | Rep Phone Number      | Rep Birth Date   | Rep Hire Date   | Rep Status   | Rep Region Code   |
++==========+============+=================+=================================+=======================+==================+=================+==============+===================+
+|        1 | REP001     | Yolanda Mendoza | sue78@yahoo.com                 | +1-497-334-8434x43757 | 1988-08-01       | 2025-02-13      | Inactive     | REG04             |
++----------+------------+-----------------+---------------------------------+-----------------------+------------------+-----------------+--------------+-------------------+
+|        2 | REP002     | Timothy Pope    | david86@yahoo.com               | 041-574-7338x4842     | 1974-06-11       | 2023-05-30      | Active       | REG04             |
++----------+------------+-----------------+---------------------------------+-----------------------+------------------+-----------------+--------------+-------------------+
+|        3 | REP003     | Patrick Allen   | danawilliams@rivera-kennedy.com | (773)454-0193x80262   | 1975-03-23       | 2020-07-08      | Active       | REG03             |
++----------+------------+-----------------+---------------------------------+-----------------------+------------------+-----------------+--------------+-------------------+
+|        4 | REP004     | Amanda Huff     | sharonhayden@yahoo.com          | 991-547-8872x8743     | 1965-02-08       | 2020-10-16      | Inactive     | REG02             |
++----------+------------+-----------------+---------------------------------+-----------------------+------------------+-----------------+--------------+-------------------+
+|        5 | REP005     | Erin Simon      | alexisrogers@yahoo.com          | (966)851-6122         | 1977-08-15       | 2025-04-21      | Inactive     | REG05             |
++----------+------------+-----------------+---------------------------------+-----------------------+------------------+-----------------+--------------+-------------------+
+💾 Versión actual sobrescrita en: gold_reps.csv
+🗂 Versión histórica guardada: gold_reps_2025-06-24_2321.csv
+
+🌟 Iniciando generación de tabla gold: visits
+📥 Tabla cargada desde silver: visits_clean.csv
+🔢 Registros: 135
+📊 Vista previa de tabla gold: visits:
++--------------+--------------+-------------------------+-----------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+| Visit Code   | Visit Date   |   Visit Duration (Mins) | Visit Purpose   | Visit Notes                                                                                         |   customer_row_id |   rep_row_id |
++==============+==============+=========================+=================+=====================================================================================================+===================+==============+
+| VISIT00001   | 2025-01-02   |                      45 | Support         | Young lot far turn beat story. Give gas six miss.                                                   |                35 |            8 |
++--------------+--------------+-------------------------+-----------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+| VISIT00002   | 2025-02-21   |                      45 | Support         | Policy it ahead pass. Last involve above Democrat everything.                                       |                30 |           17 |
++--------------+--------------+-------------------------+-----------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+| VISIT00003   | 2024-08-28   |                      60 | Product Info    | Cell fire late approach grow. Machine crime himself. Measure manager range indeed style major bar.  |                34 |           15 |
++--------------+--------------+-------------------------+-----------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+| VISIT00004   | 2025-04-06   |                      30 | Support         | Member of environmental myself yard my series. National wrong bill stop seem fear. Last give stage. |                -1 |            4 |
++--------------+--------------+-------------------------+-----------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+| VISIT00005   | 2025-03-22   |                      60 | Contract        | Of weight method too spring. While size try yeah.                                                   |                13 |           13 |
++--------------+--------------+-------------------------+-----------------+-----------------------------------------------------------------------------------------------------+-------------------+--------------+
+💾 Versión actual sobrescrita en: gold_visits.csv
+🗂 Versión histórica guardada: gold_visits_2025-06-24_2321.csv
+
+🌟 Iniciando generación de tabla gold: sales
+📥 Tabla cargada desde silver: sales_clean.csv
+🔢 Registros: 181
+📊 Vista previa de tabla gold: sales:
++-------------+-------------+------------+----------------+---------------------+------------------+-------------------+--------------+
+| Sale Code   | Sale Date   |   Quantity |   Discount (%) |   Total Value (USD) |   product_row_id |   customer_row_id |   rep_row_id |
++=============+=============+============+================+=====================+==================+===================+==============+
+| SALE00001   | 2025-01-30  |         71 |           0.07 |             1179.07 |                6 |                 2 |           16 |
++-------------+-------------+------------+----------------+---------------------+------------------+-------------------+--------------+
+| SALE00002   | 2025-01-10  |         30 |           0.02 |              253.92 |                2 |                40 |            2 |
++-------------+-------------+------------+----------------+---------------------+------------------+-------------------+--------------+
+| SALE00003   | 2024-08-26  |         31 |           0.08 |             2478.53 |                6 |                 5 |           15 |
++-------------+-------------+------------+----------------+---------------------+------------------+-------------------+--------------+
+| SALE00004   | 2025-03-15  |         74 |           0.14 |             3944.64 |                9 |                 8 |           16 |
++-------------+-------------+------------+----------------+---------------------+------------------+-------------------+--------------+
+| SALE00005   | 2024-11-16  |         13 |           0.03 |             2212.15 |               13 |                24 |            6 |
++-------------+-------------+------------+----------------+---------------------+------------------+-------------------+--------------+
+💾 Versión actual sobrescrita en: gold_sales.csv
+🗂 Versión histórica guardada: gold_sales_2025-06-24_2321.csv
