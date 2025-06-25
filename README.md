@@ -26,7 +26,7 @@ El informe PDF incluye:
 
     Relación descuentos vs ventas
 
-    Gráficos detallados y visuales atractivos
+    Gráficos y visuales detallados
 
 ## 📌 Tecnologías usadas
     Python 3
