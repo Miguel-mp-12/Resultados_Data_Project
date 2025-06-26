@@ -19,7 +19,7 @@ Este proyecto demuestra un flujo completo de análisis de datos mediante un pipe
                                 → 📄 visits records rejected due to wrong Date
             /review_sales/      → 📄 Bronze sales in xlsx
                                 → 📄 Gold sales in xlsx
-    📁 data_examples/           → 📄 Datos de muestra para ilustración (sin datos reales)
+    📁 platinum/                → 📄 Datos de ventas unificados para analisis
     📄 README.md                → 📄 Readme
 
 ## 📈 Informe generado
