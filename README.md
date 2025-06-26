@@ -11,6 +11,7 @@ Este proyecto demuestra un flujo completo de análisis de datos mediante un pipe
     E --> F[PDF Report Generation]
 
 ## Estructura del repositorio
+    📁 bronze                   → 📄 Archivos originales (raw)
     📁 outputs
             /reports/           → 📄 Reporte final PDF
             /data_catalog/      → 📄 Data Catalog xlsx
