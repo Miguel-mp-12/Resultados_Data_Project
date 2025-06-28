@@ -14,23 +14,41 @@ This pipeline was designed for advanced data analysis, supporting predictive and
 ## 📁 Project Structure
 
 Project/
+
 ├── data/
+
 │ ├── bronze/ # Raw simulated data (dirty)
+
 │ ├── silver/ # Cleaned, validated datasets
+
 │ ├── gold/ # Business-ready, renamed datasets
+
 │ ├── platinum/ # Fully joined dataset ready for ML
+
 ├── outputs/
+
 │ ├── plots/ # Visualizations
+
 │ ├── logs/ # Logs from each stage
+
 │ ├── predictive/ # PDF reports for predictive models
+
 │ ├── prescriptive/ # Scenario-based simulations
+
 │ └── data_catalog/ # Auto-generated metadata
+
 ├── pipelines/
+
 │ ├── utils/ # Shared functions, simulation scripts
+
 │ ├── bronze_to_silver/
+
 │ ├── silver_to_gold/
+
 │ ├── analytics/ # Modeling scripts
+
 ├── src/
+
 │ └── main.py # Master pipeline controller
 
 
