@@ -56,7 +56,6 @@ Project/
 ## 🔁 ETL Pipeline Flow
 
 
-graph TD
   A[Simulate Data (Bronze)] --> B[Clean & Validate (Silver)]
   B --> C[Dimension Mapping + Join (Platinum)]
   C --> D[Predictive Model]
