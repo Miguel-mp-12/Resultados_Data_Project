@@ -112,12 +112,13 @@ Clean data in /data/*
 Logs in /outputs/logs
 
 🔧 Requirements
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-faker
+
+    pandas
+    numpy
+    matplotlib
+    seaborn
+    scikit-learn
+    faker
 
 Install with:
 
