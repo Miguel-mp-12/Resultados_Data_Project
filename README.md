@@ -68,7 +68,7 @@ Project/
   
   E --> F
   
-##⚙️ Main Features
+## ⚙️ Main Features
 ✅ Full synthetic data generation with [Faker]
 
 ✅ Data quality logs, ingestion tracking, and versioning
