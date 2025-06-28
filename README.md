@@ -57,18 +57,30 @@ Project/
 
 
   A[Simulate Data (Bronze)] --> B[Clean & Validate (Silver)]
+  
   B --> C[Dimension Mapping + Join (Platinum)]
+  
   C --> D[Predictive Model]
+  
   C --> E[Prescriptive Simulation]
+  
   D --> F[PDF Report]
+  
   E --> F
-⚙️ Main Features
+  
+##⚙️ Main Features
 ✅ Full synthetic data generation with [Faker]
+
 ✅ Data quality logs, ingestion tracking, and versioning
+
 ✅ Key business metrics calculated and validated
+
 ✅ Predictive modeling (Random Forest Regressor)
+
 ✅ Prescriptive simulation (price change, rep assignment...)
+
 ✅ Dynamic PDF generation with summaries & charts
+
 ✅ Fully modular: run individual scripts or the whole pipeline via run_etl.py
 
 ## 📊 Predictive Model Highlights
