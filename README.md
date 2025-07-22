@@ -1,155 +1,124 @@
-# 📊 Customer Insights ETL & Advanced Analytics Pipeline
+# 🛠️ CSV to Analytics: A Layered Data Engineering Pipeline in Python
 
-Welcome to the **Customer Insights Project** – an end-to-end, enterprise-grade data pipeline designed to simulate, clean, transform, analyze, and model commercial sales data.  
-This project reflects a real-world data stack you’d find in a modern data-driven company.
+## 📌 Project Overview
+
+This repository presents the result of a data engineering and modeling process 
+based on raw CSV files. The data flows through a layered architecture inspired 
+by the **medallion model** used in modern data lakehouses.
+
+The final outcome includes structured and cleaned datasets—ideal for business 
+reporting and analytics—organized in **Bronze**, **Silver**, **Gold**, 
+and **Platinum** layers. Each layer represents a higher level of data 
+quality, integration, and modeling.
+
+This work is part of the **Data Engineering** branch of the data ecosystem, 
+with some overlap in **Data Modeling** to support advanced analytical use cases.
 
 ---
 
-## 🚀 Project Overview
+## 📁 Data Layer Structure
 
-This pipeline was designed for advanced data analysis, supporting predictive and prescriptive modeling, as well as simulating realistic data flows from scratch. It mimics how large pharmaceutical or commercial teams manage customer and sales data.
-
----
-
-## 📁 Project Structure
-
-Project/
-
+```bash
+project-root/
+│
 ├── data/
+│   ├── raw/              # Raw CSV files (input)
+│   ├── bronze/           # Cleaned and standardized data
+│   ├── silver/           # Enriched data with type casting, filtering, and basic joins
+│   └── gold/             # Modeled tables ready for analysis and reporting
+│
+├── scripts/
+│   ├── bronze_to_silver  # Reading raw files and identify incorrect values
+│   ├── silver_to_gold    # Modeling the tables and renaming fields
+│   └── gold_to_platinum  # Specific joins and modeling logic
+│
+├── reports/              # Output reports or sample queries
+├── logging/              # Logs created with each execution to audit the process
+├── README.md             # Project documentation
+└── requirements.txt      # Python dependencies
+```
+---
 
-│ ├── bronze/ # Raw simulated data (dirty)
+### Bronze Layer – Raw Ingestion Layer
 
-│ ├── silver/ # Cleaned, validated datasets
+This layer contains the ingested raw data, extracted directly from CSV files.
 
-│ ├── gold/ # Business-ready, renamed datasets
+- Possible duplicates, invalid values, or nulls may exist  
+- No type casting or formatting corrections  
+- No filtering or transformation  
 
-│ ├── platinum/ # Fully joined dataset ready for ML
+**Goal:** Preserve fidelity to the source, enabling full traceability, 
+reproducibility, and auditing.
 
-├── outputs/
+---
 
-│ ├── plots/ # Visualizations
+### Silver Layer – Cleaned & Validated Layer
 
-│ ├── logs/ # Logs from each stage
+This layer introduces semantic cleaning and validation to improve data 
+quality for downstream processing:
 
-│ ├── predictive/ # PDF reports for predictive models
+- Removal of duplicate records  
+- Data type corrections (e.g., dates, numbers, booleans)  
+- Handling or flagging of null and invalid values  
+- Initial filtering (e.g., dropping corrupted rows)  
 
-│ ├── prescriptive/ # Scenario-based simulations
+**Goal:** Identify and correct data quality issues to ensure consistent and 
+reliable inputs for analysis and modeling.
 
-│ └── data_catalog/ # Auto-generated metadata
+---
 
-├── pipelines/
+### Gold Layer – Modeled & Joined Layer
 
-│ ├── utils/ # Shared functions, simulation scripts
+At this stage, the cleaned data is modeled into analytical structures:
 
-│ ├── bronze_to_silver/
+- Fact and dimension tables are built  
+- Key relationships established through joins (e.g., sales → reps, products, customers)  
+- Business logic applied (e.g., durations, outcome classifications, aggregations)  
 
-│ ├── silver_to_gold/
+**Goal:** Structure the data using meaningful names and surrogate keys, 
+ensuring full relational integrity across entities.
 
-│ ├── analytics/ # Modeling scripts
+---
 
-├── src/
+### Platinum Layer – Curated Business Layer
 
-│ └── main.py # Master pipeline controller
+The platinum layer consists of highly curated, lightweight tables 
+tailored for direct analytical consumption:
+
+- Denormalized when necessary for performance and usability  
+- Optimized for use in reporting tools and dashboards  
+- Focused on KPIs and advanced analytics  
+- Final tables may include business-friendly renaming and selective column presentation  
+- Contains final business entities (e.g., `sales_summary`, 
+`prescription_behavior`, `clinical_success_rates`)  
+
+**Goal:** Deliver clear, efficient, and business-oriented tables optimized 
+for reporting and advanced analytical use cases.
 
 
+---
 
-## 🔁 ETL Pipeline Flow
+## 🧰 Technologies Used
 
+This project is developed entirely in **Python**, following best practices in data processing and pipeline design. Key tools and libraries include:
 
-  A[Simulate Data (Bronze)] --> B[Clean & Validate (Silver)]
-  
-  B --> C[Dimension Mapping + Join (Platinum)]
-  
-  C --> D[Predictive Model]
-  
-  C --> E[Prescriptive Simulation]
-  
-  D --> F[PDF Report]
-  
-  E --> F
-  
-### ⚙️ Main Features
-✅ Full synthetic data generation with [Faker]
+- **Pandas** – For data ingestion, transformation, cleaning, joins, and filtering operations  
+- **os / pathlib** – To manage dynamic file paths across the project  
+- **datetime** – Used for timestamping and custom logging functionality  
+- **tabulate** – For clean and readable table outputs in the console  
+- **seaborn** – For data visualization and exploratory analysis  
 
-✅ Data quality logs, ingestion tracking, and versioning
+### 🧱 Data Modeling & Architecture
 
-✅ Key business metrics calculated and validated
+- Applied **dimensional modeling techniques** including:
+  - Surrogate keys (e.g. `row_wid`)
+  - Consistent naming conventions across tables
+  - Structured join logic between fact and dimension tables  
 
-✅ Predictive modeling (Random Forest Regressor)
-
-✅ Prescriptive simulation (price change, rep assignment...)
-
-✅ Dynamic PDF generation with summaries & charts
-
-✅ Fully modular: run individual scripts or the whole pipeline via run_etl.py
-
-## 📊 Predictive Model Highlights
-Target: Total Value (USD)
-
-Top Features: Discount %, Customer Type, Rep Tenure
-
-Metrics:
-
-R²: >85% → Excellent fit
-
-MAE: Error in dollar terms
-
-RMSE: Measures variability
-
-Report: Generated PDF with:
-
-Executive summary
-
-Feature importance
-
-Prediction scatter plot
-
-Recommendations based on top features
-
-### 🧠 Prescriptive Model Scenarios
-We simulate 3 real-world what-if strategies:
-
-Reduce Discounts by 10%
-
-Only Assign Experienced Reps (>1y)
-
-Increase Price 5% for Hospitals
-
-For each:
-
-Predicted revenue impact (total + per transaction)
-
-Distribution of deltas
-
-Scatter comparison and textual recommendation
-
-## 📌 How to Run
-Activate virtualenv:
-
-bash
-source venv/bin/activate
-Run entire pipeline:
-
-bash
-python src/run_etl.py
-Explore outputs:
-
-PDF reports in outputs/predictive/ and prescriptive/
-
-Clean data in /data/*
-
-Logs in /outputs/logs
-
-🔧 Requirements
-
-    pandas
-    numpy
-    matplotlib
-    seaborn
-    scikit-learn
-    faker
-
-Install with:
-
-bash
-pip install -r requirements.txt
+- Implemented a **layered architecture** for data processing:
+  - **Bronze** → Raw ingestion  
+  - **Silver** → Cleaned and structured  
+  - **Gold** → Business-ready aggregates  
+  - **Platinum** → Final analytics-ready dataset
+ 
+![Data Model Schema](platinum/data_model.drawio.png)
